@@ -35,7 +35,7 @@ function AppCardItem({ card, className }: AppCardItemProps) {
     <a
       href={card.href}
       className={cn(
-        "group flex h-[132px] w-[132px] flex-col items-center shadow-sm justify-center gap-5 rounded-2xl border bg-external-app-card-background px-4 py-5 text-center",
+        "group flex h-33 w-33 flex-col items-center shadow-sm justify-center gap-5 rounded-2xl border bg-external-app-card-background px-4 py-5 text-center",
         "border-external-app-card-border",
         "transition-all duration-200  hover:border-external-app-card-hover-border hover:shadow-md",
         className,
