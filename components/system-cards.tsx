@@ -85,7 +85,6 @@ const ERPIcon = () => (
   </svg>
 );
 
-
 const GEOIcon = () => (
   <svg
     width="48"
@@ -140,7 +139,7 @@ function SystemCardItem({ card, className }: SystemCardItemProps) {
     <a
       href={card.href}
       className={cn(
-        "group relative flex h-[140px] w-[180px] flex-col items-start justify-between rounded-2xl border-2 p-4 border-system-card-border",
+        "group relative flex h-35 w-45 flex-col items-start justify-between rounded-2xl border-2 p-4 border-system-card-border",
         "bg-system-card-background ",
         "hover:border-system-card-border hover:bg-system-card-hover-background hover:shadow-md",
         "transition-all duration-200",
@@ -172,7 +171,7 @@ function AddCardButton({ onClick, className }: AddCardButtonProps) {
     <button
       onClick={onClick}
       className={cn(
-        "flex h-[140px] w-[180px] items-center justify-center rounded-2xl border-2 border-dashed",
+        "flex h-35 w-45 items-center justify-center rounded-2xl border-2 border-dashed",
         "bg-system-card-background border-system-card-add-border",
         "hover:bg-system-card-hover-background hover:border-system-card-border",
         "transition-all duration-200",
