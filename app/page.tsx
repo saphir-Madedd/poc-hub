@@ -7,7 +7,7 @@ export default async function Home({
   searchParams: { brandId: string };
 }) {
   const { brandId } = await searchParams;
-  const theme = await fetchTheme(brandId);
+  const theme = await fetchTheme(brandId ?? 1);
 
   return <PageContainer theme={theme} />;
 }
